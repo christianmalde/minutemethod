@@ -152,7 +152,7 @@ export default function BookingConfirmScreen() {
 
           {/* Service */}
           <View className="mb-5">
-            <Text className="text-white text-xl font-bold">
+            <Text className="text-primary-500 text-xl font-bold">
               {service?.name}
             </Text>
             {service?.instructor_name && (

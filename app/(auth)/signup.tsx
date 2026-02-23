@@ -67,7 +67,7 @@ export default function SignUpScreen() {
         <View className="flex-1 px-6 pt-20 pb-10">
           {/* Title */}
           <View className="mb-10">
-            <Text className="text-4xl font-bold text-white tracking-tight">
+            <Text className="text-4xl font-bold text-primary-500 tracking-tight">
               MinuteMethod
             </Text>
             <Text className="text-primary-500 text-lg mt-1">

@@ -130,7 +130,7 @@ export default function HomeScreen() {
           {loading ? (
             <ActivityIndicator
               size="large"
-              color="#4f6ef7"
+              color="#dc2626"
               className="mt-10"
             />
           ) : filtered.length === 0 ? (

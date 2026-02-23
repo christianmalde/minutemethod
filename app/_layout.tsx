@@ -45,7 +45,7 @@ export default function RootLayout() {
   if (session === undefined) {
     return (
       <View className="flex-1 items-center justify-center bg-primary-900">
-        <ActivityIndicator size="large" color="#4f6ef7" />
+        <ActivityIndicator size="large" color="#dc2626" />
       </View>
     );
   }

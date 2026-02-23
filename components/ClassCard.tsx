@@ -25,7 +25,7 @@ export function ClassCard({ service, onPress }: Props) {
       {/* Header row */}
       <View className="flex-row justify-between items-start mb-3">
         <View className="flex-1 mr-3">
-          <Text className="text-white text-lg font-bold">{service.name}</Text>
+          <Text className="text-primary-500 text-lg font-bold">{service.name}</Text>
           {service.instructor_name && (
             <Text className="text-gray-400 text-sm mt-0.5">
               with {service.instructor_name}
@@ -43,7 +43,7 @@ export function ClassCard({ service, onPress }: Props) {
 
       {/* Description */}
       {service.description ? (
-        <Text className="text-gray-300 text-sm mb-4" numberOfLines={2}>
+        <Text className="text-white text-sm mb-4" numberOfLines={2}>
           {service.description}
         </Text>
       ) : null}

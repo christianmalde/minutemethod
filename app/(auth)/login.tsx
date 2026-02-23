@@ -46,7 +46,7 @@ export default function LoginScreen() {
         <View className="flex-1 px-6 pt-20 pb-10">
           {/* Logo / Title */}
           <View className="mb-12">
-            <Text className="text-4xl font-bold text-white tracking-tight">
+            <Text className="text-4xl font-bold text-primary-500 tracking-tight">
               MinuteMethod
             </Text>
             <Text className="text-primary-500 text-lg mt-1">

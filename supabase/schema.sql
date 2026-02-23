@@ -103,12 +103,9 @@ create policy "Users can update own bookings"
 -- ─── Seed Data ───────────────────────────────────────────────
 
 insert into services (name, type, description, price, duration_minutes, instructor_name) values
-  ('HIIT Blast',       'class', 'High-intensity interval training for all levels. Burn calories fast!', 15.00, 45, 'Sarah Johnson'),
-  ('Yoga Flow',        'class', 'Morning vinyasa flow to energise your day. Suitable for all levels.', 12.00, 60, 'Emma Chen'),
-  ('Spin & Sweat',     'class', 'Indoor cycling class set to pumping music. Great cardio workout.',     18.00, 45, 'Mike Torres'),
-  ('Boxing Fundamentals', 'class', 'Learn boxing technique while getting an incredible full-body workout.', 20.00, 60, 'Dave Okafor'),
-  ('1-on-1 PT Session', 'pt',   'Personalised training session tailored to your goals.', 60.00, 60, 'Sarah Johnson'),
-  ('PT Strength Program', 'pt', 'Structured strength & conditioning programme. Includes workout plan.', 75.00, 60, 'Mike Torres');
+  ('Minute Method Strength', 'class', 'Build functional strength with progressive resistance training. Suitable for all fitness levels.', 15.00, 60, 'Christian Malde'),
+  ('Minute Method Combo',    'class', 'A dynamic combination of strength and conditioning. The ultimate full-body workout experience.', 15.00, 60, 'Christian Malde'),
+  ('Minute Method Exclusive Home Class', 'pt', 'A personalised training session delivered in the comfort of your own home. Tailored entirely to your goals.', 75.00, 60, 'Christian Malde');
 
 -- Seed schedules for the next 7 days
 do $$
