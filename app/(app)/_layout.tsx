@@ -27,17 +27,14 @@ export default function AppLayout() {
         name="schedule"
         options={{
           title: "Schedule",
-          tabBarIcon: ({ color }) => (
-            <Text style={{ color, fontSize: 20 }}>📅</Text>
-          ),
-          href: null, // hidden — navigated to programmatically
+          tabBarButton: () => null,
         }}
       />
       <Tabs.Screen
         name="booking-confirm"
         options={{
           title: "Confirm",
-          href: null,
+          tabBarButton: () => null,
         }}
       />
       <Tabs.Screen
