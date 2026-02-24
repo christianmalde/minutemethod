@@ -207,7 +207,7 @@ export default function BookingConfirmScreen() {
               <View className="flex-row justify-between">
                 <Text className="text-white font-bold text-base">Total</Text>
                 <Text className="text-white font-bold text-base">
-                  ${service?.price.toFixed(2)}
+                  {service?.price.toFixed(0)} NOK
                 </Text>
               </View>
               <Text className="text-gray-500 text-xs mt-1">

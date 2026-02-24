@@ -103,9 +103,9 @@ create policy "Users can update own bookings"
 -- ─── Seed Data ───────────────────────────────────────────────
 
 insert into services (name, type, description, price, duration_minutes, instructor_name) values
-  ('Minute Method Strength', 'class', 'Build functional strength with progressive resistance training. Suitable for all fitness levels.', 15.00, 60, 'Christian Malde'),
-  ('Minute Method Combo',    'class', 'A dynamic combination of strength and conditioning. The ultimate full-body workout experience.', 15.00, 60, 'Christian Malde'),
-  ('Minute Method Exclusive Home Class', 'pt', 'A personalised training session delivered in the comfort of your own home. Tailored entirely to your goals.', 75.00, 60, 'Christian Malde');
+  ('Minute Method Strength', 'class', 'Build functional strength with progressive resistance training. Suitable for all fitness levels.', 350.00, 60, 'Christian Malde'),
+  ('Minute Method Combo',    'class', 'A dynamic combination of strength and conditioning. The ultimate full-body workout experience.', 350.00, 60, 'Christian Malde'),
+  ('Minute Method Exclusive Home Class', 'pt', 'A personalised training session delivered in the comfort of your own home. Tailored entirely to your goals.', 1500.00, 60, 'Christian Malde');
 
 -- Seed schedules for the next 7 days
 do $$

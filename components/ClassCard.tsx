@@ -56,7 +56,7 @@ export function ClassCard({ service, onPress }: Props) {
           </Text>
         </View>
         <Text className="text-white font-bold text-base">
-          ${service.price.toFixed(2)}
+          {service.price.toFixed(0)} NOK
         </Text>
       </View>
     </TouchableOpacity>

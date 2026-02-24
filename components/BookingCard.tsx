@@ -98,7 +98,7 @@ export function BookingCard({ booking, onCancelled }: Props) {
             ⏱ {service.duration_minutes} min
           </Text>
           <Text className="text-gray-500 text-sm">
-            ${service.price.toFixed(2)}
+            {service.price.toFixed(0)} NOK
           </Text>
         </View>
       )}
