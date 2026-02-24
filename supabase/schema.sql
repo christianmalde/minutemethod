@@ -100,6 +100,27 @@ create policy "Users can create own bookings"
 create policy "Users can update own bookings"
   on bookings for update using (auth.uid() = user_id);
 
+-- ─── Messages ────────────────────────────────────────────────
+create table if not exists messages (
+  id          uuid default uuid_generate_v4() primary key,
+  user_id     uuid references auth.users(id) on delete cascade not null,
+  content     text not null,
+  sender      text not null check (sender in ('user', 'pt')),
+  created_at  timestamptz default now() not null,
+  read_at     timestamptz
+);
+
+alter table messages enable row level security;
+
+create policy "Users can view own messages"
+  on messages for select using (auth.uid() = user_id);
+
+create policy "Users can send messages"
+  on messages for insert with check (auth.uid() = user_id and sender = 'user');
+
+-- Enable Realtime for live chat
+alter publication supabase_realtime add table messages;
+
 -- ─── Seed Data ───────────────────────────────────────────────
 
 insert into services (name, type, description, price, duration_minutes, instructor_name) values

@@ -7,10 +7,10 @@ export default function AppLayout() {
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: "#1a1a2e",
+          backgroundColor: "#0d1b3e",
           borderTopColor: "rgba(255,255,255,0.1)",
         },
-        tabBarActiveTintColor: "#4f6ef7",
+        tabBarActiveTintColor: "#dc2626",
         tabBarInactiveTintColor: "#6b7280",
       }}
     >
@@ -40,9 +40,27 @@ export default function AppLayout() {
       <Tabs.Screen
         name="my-bookings"
         options={{
-          title: "My Bookings",
+          title: "Bookings",
           tabBarIcon: ({ color }) => (
             <Text style={{ color, fontSize: 20 }}>🎟</Text>
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="summary"
+        options={{
+          title: "Summary",
+          tabBarIcon: ({ color }) => (
+            <Text style={{ color, fontSize: 20 }}>📊</Text>
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="messages"
+        options={{
+          title: "Messages",
+          tabBarIcon: ({ color }) => (
+            <Text style={{ color, fontSize: 20 }}>💬</Text>
           ),
         }}
       />

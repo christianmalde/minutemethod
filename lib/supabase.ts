@@ -58,3 +58,14 @@ export type Booking = {
   created_at: string;
   schedule?: Schedule & { service?: Service };
 };
+
+export type MessageSender = "user" | "pt";
+
+export type Message = {
+  id: string;
+  user_id: string;
+  content: string;
+  sender: MessageSender;
+  created_at: string;
+  read_at: string | null;
+};
