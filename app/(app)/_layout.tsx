@@ -26,15 +26,15 @@ export default function AppLayout() {
       <Tabs.Screen
         name="schedule"
         options={{
-          title: "Schedule",
           tabBarButton: () => null,
+          tabBarItemStyle: { width: 0, overflow: "hidden" },
         }}
       />
       <Tabs.Screen
         name="booking-confirm"
         options={{
-          title: "Confirm",
           tabBarButton: () => null,
+          tabBarItemStyle: { width: 0, overflow: "hidden" },
         }}
       />
       <Tabs.Screen
